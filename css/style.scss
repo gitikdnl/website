@@ -718,7 +718,7 @@ section.app_section {
   color: #636363;
 }
 
-.table-box{
+.table-box {
   padding: 15px 0px;
   background-color: #30ae69;
   border: 2px solid #ffffff;
@@ -730,6 +730,12 @@ section.app_section {
   padding: 15px 0px;
   border: 2px solid #ffffff;
   color: white;
+}
+
+.trade-img {
+  height: 30vh;
+  width: 40vh;
+  object-fit: fill;
 }
 
 /* end footer section*/

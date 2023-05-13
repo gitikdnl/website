@@ -108,6 +108,18 @@
         filter: blur(10px);
 
     }
+
+    .course-exp {
+        flex-direction: column;
+    }
+
+    .ul-left {
+        padding-left: 10px;
+    }
+
+    .layout_padding {
+        padding: 11vh 1vh !important;
+    }
 }
 
 @media (max-width: 480px) {}

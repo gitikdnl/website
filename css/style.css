@@ -851,5 +851,11 @@ section.app_section .img-box img {
     color: black;
 }
 
+.trade-img {
+  height: 30vh;
+  width: 40vh;
+  object-fit: fill;
+}
+
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
