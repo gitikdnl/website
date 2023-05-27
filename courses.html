@@ -28,6 +28,105 @@
     <link href="css/style.css" rel="stylesheet" />
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
+
+    <style>
+        .mySlides {
+            display: none;
+            padding-top: 10vh;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            position: relative;
+            margin: auto;
+        }
+
+        .banner-img {
+            height: 438px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+            opacity: 1 !important;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -36,11 +135,11 @@
         <header class="header_section">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg custom_nav-container ">
-                    <a href="index.html" 
-                        style=" display: flex;
+                    <a href="index.html" style=" display: flex;
                                 flex-direction: row;
                                 align-items: center;">
-                        <img src="images/logo_transparent_bg.png" alt="" style="width: 50px;height: 50px;    margin-right: 10px;" />
+                        <img src="images/logo_transparent_bg.png" alt=""
+                            style="width: 50px;height: 50px;    margin-right: 10px;" />
                         <p style="font-size: 23px;margin: 0px;color: white;">Govt. ITI</p>
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -84,10 +183,27 @@
         </header>
         <!-- end header section -->
     </div>
+    <div class="slideshow-container">
 
+        <div class="mySlides fade">
+            <img src="images/gallery/ADMISSION.jpg" class="banner-img">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/gallery/Convocation.jpg" class="banner-img">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/gallery/ELE 1.jpg" class="banner-img">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
     <!-- about section -->
 
-    <section class="about_section layout_padding">
+    <section class="about_section layout_padding" style="padding: 11vh 10vh;padding-top: 5px;">
         <div class="container">
             <div class="heading_container">
                 <h2 style="margin-top: 20px;">
@@ -107,7 +223,7 @@
                         <div class="col-lg-1 col-md-3 table-box">Sl.No</div>
                         <div class="col-lg-4 col-md-12 table-box">Trade Name</div>
                         <div class="col-lg-2 col-md-6 table-box">Duration</div>
-                        <div class="col-lg-2 col-md-6 table-box">Intake</div>
+                        <div class="col-lg-2 col-md-6 table-box">Trainee Strength</div>
                         <div class="col-lg-2 col-md-6 table-box">Qualification</div>
                     </div>
                     <div class="row d-flex justify-content-center">
@@ -146,10 +262,319 @@
                         <div class="col-lg-2 col-md-6 table-light-box">8th Pass</div>
                     </div>
                     <p style="margin-top: 30px;">
-                        This Govt.I.T.I achieved 85 % of result in All India Trade Test held in July 2022 at the end of
+                        This Govt.I.T.I achieved 85 % of result in All India Trade Test held in July 2022. At the end of
                         Training, All India Trade Test is conducted and the NCVT Certificate to the passed out Trainees
                         will be Issued.
                     </p>
+                </div>
+            </div>
+
+            <!-- 1.electrician -->
+            <div style="text-align: left;">
+                <h1>Electrician</h1>
+
+                <!-- <div>
+                    <img src="images/trade/ELECTRICIAN.jpg" class="trade-img">
+                </div> -->
+                <h3 class="courese_desc">Course Description</h3>
+
+                <ul class="ul-left">
+                    <ol><b>Trades Duration:</b> Two year</ol>
+                    <ol><b>Minimum Qualification Eligibility:</b>
+                        10th Passed under 10+2 System with Science &amp; Maths</ol>
+                    <ol>
+                        <b>Trade Type:</b>
+                        Engineering
+                    </ol>
+                </ul>
+
+                <p>ITI trade <b>Electrician</b> is powered by NCVT. ITI trade
+                    Electrician is a job oriented trade ITI trade Electrician is
+                    suitable for government job and private job. This ITI trade
+                    Electrician is very powerful for self-empowerment. This ITI
+                    trade Electrician is perfectly design to fulfill industrial
+                    requirement of Indian Industries as well as International
+                    industries.
+                </p>
+
+                <div class="course-exp" style="display: flex;">
+                    <ul class="ul-left" style="margin-right: 20px">
+                        <li>Electricians have a wide scope of Employability ranging from
+                            self-employment, contractual employment to Industrial jobs.
+                        </li>
+                        <li> After successful completion of this course, Electricians
+                            can aspire to become Electrical Contractors by acquiring the
+                            ‘B” licence from the Electrical Licence Board. </li>
+                        <li>They can set up their own Rewinding and servicing of
+                            Domestic Equipment shop.</li>
+                        <li>Job opportunities are wide open in Defence, Railways,
+                            Transport, Ship Building, Electricity Board, various
+                            Industries etc</li>
+                        <li>They can also go for further higher studies after successful
+                            completion of course.</li>
+                        <li>Students who have completed this course have found
+                            employment in the following areas:</li>
+                        <li>Service/Maintenance Technician for domestic appliances in
+                            Reputed Companies</li>
+                        <li>Assembler of Electrical control Gears</li>
+                        <li>Telephone Department</li>
+                        <li>Installation and Testing division of Auditorium and Cinema
+                            Hall</li>
+                    </ul>
+
+                    <div>
+                        <!-- <a class="lightbox" href="images/gallery/mmv1.jpg">
+                            <img class="img-fluid image scale-on-hover" src="images/trade/ELECTRICIAN.jpg">
+                        </a> -->
+                        <img src="images/trade/ELECTRICIAN.jpg" class="trade-img" style="height: 37vh;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2.fitter -->
+            <div style="text-align: left;">
+                <h1>Fitter</h1>
+
+                <h3>Course Description</h3>
+
+                <ul class="ul-left">
+                    <ol><b>Trades Duration:</b> Two year</ol>
+                    <ol><b>Minimum Qualification Eligibility:</b>
+                        10th Passed under 10+2 System with Science &amp; Maths</ol>
+                    <ol>
+                        <b>Trade Type:</b>
+                        Engineering
+                    </ol>
+                </ul>
+
+                <p>
+                    ITI trade Fitter is powered by NCVT. ITI trade Fitter is a job
+                    oriented trade ITI trade Fitter is suitable for government job
+                    and private job. This ITI trade Fitter is very powerful for
+                    self-empowerment. This ITI trade Fitter is perfectly design to
+                    fulfill industrial requirement of Indian Industries as well as
+                    International industries.
+                </p>
+
+                <p>
+                    Fitters have a wide scope of Employability ranging from
+                    self-employment, contractual employment to Industrial jobs. On
+                    successful completion of this course, the candidates shall be
+                    gainfully employed in the following industries:
+                </p>
+
+                <ul class="ul-left">
+                    <li>Production &amp; Manufacturing industries.</li>
+                    <li> Structural Fabrication like bridges, Roof structures,
+                        Building &amp; construction.</li>
+                    <li>Automobile and allied industries</li>
+                    <li>Service industries like road transportation and Railways.
+                    </li>
+                    <li>Ship building and repair</li>
+                    <li>Infrastructure and defence organizations</li>
+                    <li>In public sector industries like BHEL, BEML, NTPC, etc and
+                        private industries in India &amp; abroad.</li>
+                    <li>Self employment</li>
+                </ul>
+
+                <h3>International Comparability</h3>
+
+                <ul class="ul-left">
+                    <li>Existence of any official document suggesting the
+                        comparability of the qualification with the qualifications
+                        in other countries is not known.</li>
+                    <li>However, ITI passed out trainees are getting employment in
+                        many Gulf countries, European countries, Australia, New
+                        Zealand, Singapore etc.</li>
+                </ul>
+
+                <div class="course-exp" style="display: flex">
+                    <div style="margin-right: 20px">
+                        <h3>Progression Pathway</h3>
+
+                        <ul class="ul-left">
+                            <li>Can appear in 10+2 examination through National Institute of
+                                Open Schooling (NIOS) for acquiring higher secondary
+                                certificate and can go further for General/ Technical
+                                education</li>
+                            <li>Can take admission in diploma course in notified branches of
+                                Engineering by lateral entry</li>
+                            <li>Can join as semi-skilled worker in the industry and can
+                                become supervisor after doing part-time diploma in relevant
+                                branch of Engineering</li>
+                            <li>Can join Apprenticeship programme in different types of
+                                industries leading to National Apprenticeship certificate
+                                (NAC) after which they will be employed in industry as
+                                skilled worker and can become supervisor after doing
+                                part-time diploma in relevant branch of Engineering</li>
+                            <li>Can join Crafts Instructor Training Scheme (CITS) in the
+                                relevant trade after which they will be employed in ITI/
+                                Vocational Training Institute as instructor</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <img src="images/trade/FITTER.jpg" class="trade-img">
+                    </div>
+
+                </div>
+            </div>
+
+            <!--  3.Mechanic Motor Vehicle -->
+            <div style="text-align: left;">
+                <h1>Mechanic Motor Vehicle</h1>
+
+                <h3 class="courese_desc">Course Description</h3>
+
+                <ul class="ul-left">
+                    <ol><b>Trades Duration:</b> Two year</ol>
+                    <ol><b>Minimum Qualification Eligibility:</b>
+                        10th Passed under 10+2 System with Science &amp; Maths</ol>
+                    <ol>
+                        <b>Trade Type:</b>
+                        Engineering
+                    </ol>
+                </ul>
+
+                <p>ITI trade <b>Mechanic (Motor Vehicle)</b> is powered by NCVT. ITI
+                    trade Mechanic (Motor Vehicle) is a job oriented trade ITI trade
+                    Mechanic (Motor Vehicle) is suitable for government job and
+                    private job. This ITI trade Mechanic (Motor Vehicle) is very
+                    powerful for self-empowerment. This ITI trade Mechanic (Motor
+                    Vehicle) is perfectly design to fulfill industrial requirement
+                    of Indian Industries as well as International industries.
+                </p>
+
+
+                <div class="course-exp" style="display: flex">
+                    <div style="margin-right: 20px">
+                        <p>
+                            Installs, tests, maintains, repairs and replaces electrical
+                            Power distribution/power line equipments and fittings in
+                            factories, workshops, power house, business and residential
+                            premises etc. Manipulates controls to adjust and activate those
+                            equipments. Monitors and records control board/room readings,
+                            examines faults in control room and repairs substation
+                            equipments and panels to ensure proper operational efficiency.
+                            Mechanic Motor Vehicle (MMV) has a wide scope of Employability
+                            ranging from self-employment, contractual employment to
+                            Industrial jobs. On successful completion of this course, the
+                            candidates shall be gainfully employed in the industries for
+                            following occupations:
+                        </p>
+
+                        <ul class="ul-left">
+                            <li>Motor Vehicle Mechanics, Other</li>
+                            <li>Mechanic, Automobile</li>
+                            <li>Maintenance Technician – Service </li>
+                            <li>Workshop </li>
+                            <li>Auto Service Technician – Mechanic </li>
+                            <li>Fitter Automobile</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <img src="images/trade/MMV.jpg" class="trade-img">
+                    </div>
+                </div>
+            </div>
+
+            <!--  4.Wireman -->
+            <div style="text-align: left;">
+                <h1>Wireman</h1>
+
+                <h3 class="courese_desc">Course Description</h3>
+
+                <ul class="ul-left">
+                    <ol><b>Trades Duration:</b> Two year</ol>
+                    <ol><b>Minimum Qualification Eligibility:</b>
+                        8th Passed</ol>
+                    <ol>
+                        <b>Trade Type:</b>
+                        Engineering
+                    </ol>
+                </ul>
+
+                <p>ITI trade <b>Wireman</b> is powered by NCVT. ITI trade Wireman is
+                    a job oriented trade ITI trade Wireman is suitable for
+                    government job and private job. This ITI trade Wireman is very
+                    powerful for self-empowerment. This ITI trade Wireman is
+                    perfectly design to fulfill industrial requirement of Indian
+                    Industries as well as International industries.
+                </p>
+
+                <div class="course-exp" style="display: flex">
+                    <div style="margin-right: 20px">
+                        <p>Wireman, Light and Power installs various kinds of electrical
+                            wiring such as cleat, conduit, casing, concealed etc. in houses,
+                            factories, workshops and other establishments for light and
+                            power supply. Studies diagram and plan of wiring and marks
+                            light, power and other points accordingly. Fixes wooden pegs,
+                            sizes tubes, saws casings, etc. by common carpentry fitting and
+                            other processes, according to type of wiring needed. Erects
+                            switch boards and fixes switch box casings cleats, conduits
+                            ceiling roses, switches, meters etc. according to type and plan
+                            of wiring. Draws wire in two way or three-way wiring system as
+                            prescribed and makes electrical connections through plugs and
+                            switches to different points exercising great care for safety
+                            and avoiding short circuit and earthing at any stage of wiring.
+                            Fixes fuses and covers as per diagram and insulates all naked
+                            wires at diversions and junctions to eliminate chances of short
+                            circuit and earthing. Fits light brackets, holders, shades, tube
+                            and mercury lights, fans etc, and makes electrical connection as
+                            necessary. Tests checks installed wiring for leakage and
+                            continuity using megger, removes faults if any and certifies
+                            wiring as correct for connecting mains. Checks existing wiring
+                            for defects and restores current supply by replacing defective
+                            switches, plug sockets, blown fuse etc. or removing short
+                            circuits and faulty wiring as necessary. May repair simple
+                            electrical domestic appliances.
+                        </p>
+
+                        <p>Electrical wiring works such as cleat, conduit, casing, concealed
+                            etc. in houses, factories, workshops and other establishments
+                            for light and power supply.
+                        </p>
+                    </div>
+
+                    <div>
+                        <img src="images/trade/Wireman.jpg" class="trade-img">
+                    </div>
+                </div>
+            </div>
+
+            <!--  5.Welder -->
+            <div style="text-align: left; margin-bottom: 40px;">
+                <h1>Welder</h1>
+
+                <div class="course-exp" style="display: flex">
+
+                    <div style="margin-right: 20px">
+                        <h3 class="courese_desc">Course Description</h3>
+
+                        <ul class="ul-left">
+                            <ol><b>Trades Duration:</b> One year</ol>
+                            <ol><b>Minimum Qualification Eligibility:</b>
+                                8th Passed</ol>
+                            <ol>
+                                <b>Trade Type:</b>
+                                Engineering
+                            </ol>
+                        </ul>
+
+                        <p>ITI trade Welder is powered by NCVT. ITI trade Welder is a job
+                            oriented trade ITI trade Welder is suitable for government job
+                            and private job. This ITI trade Welder is very powerful for
+                            self-empowerment. This ITI trade Welder is perfectly design to
+                            fulfill industrial requirement of Indian Industries as well as
+                            International industries.</p>
+                        <p>Gas welding (includes gas cutting), Arc welding, TIG welding,
+                            MIG/MAG welding etc</p>
+                    </div>
+
+                    <div>
+                        <img src="images/trade/Welder.jpg" class="trade-img" style="height: 33vh;">
+                    </div>
                 </div>
             </div>
         </div>
@@ -172,14 +597,14 @@
                         <h5>
                             Contact Us
                         </h5>
-                        <div>
+                        <div style="align-items: flex-start;">
                             <div class="img-box">
                                 <img src="images/location.png" width="18px" alt="" />
                             </div>
                             <p>
-                                Govt. ITI., Kadayanallur
-                                1/4 Panpozhi Road, Kasidharmam,
-                                Kadayanallur,Tenkasi District.
+                                Govt. ITI., Kadayanallur<br>
+                                1/4 Panpozhi Road, Kasidharmam,<br>
+                                Kadayanallur,Tenkasi District.<br>
                                 Tamilnadu,India, Pin : 627 751
                             </p>
                         </div>
@@ -211,10 +636,10 @@
                             Who Can Apply?
                         </h5>
                         <p>
-                            ITI courses are available which you can join even after the 10th.
+                            ITI courses are available which you can join even after the 8th or 10th.
                         </p>
                         <p>
-                            12th pass students can also Join the ITI course.
+                            Any degree students can also Join the ITI course.
                         </p>
                     </div>
                 </div>
@@ -284,6 +709,34 @@
         });
     </script>
     <!-- end owl carousel script -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 </body>
 
 </html>

@@ -108,6 +108,23 @@
         filter: blur(10px);
 
     }
+
+    .course-exp {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ul-left {
+        padding-left: 10px;
+    }
+
+    .layout_padding {
+        padding: 11vh 1vh !important;
+    }
+
+    .trade-img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {}
