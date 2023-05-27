@@ -689,7 +689,7 @@ section.app_section .img-box img {
 .info_section {
   background-color: #171717;
   color: #ffffff;
-  padding: 90px 0 45px 0;
+  padding: 50px 0 10px 0;
 }
 
 .info_section h5 {
@@ -855,6 +855,10 @@ section.app_section .img-box img {
   height: 30vh;
   width: 40vh;
   object-fit: fill;
+}
+
+.Kadayanallur-logo {
+  width: 60vh;
 }
 
 /* end footer section*/

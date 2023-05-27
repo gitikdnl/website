@@ -150,6 +150,10 @@
     .admission-list {
         margin: 0px !important;
     }
+
+    .Kadayanallur-logo {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {}
