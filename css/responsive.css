@@ -119,11 +119,36 @@
     }
 
     .layout_padding {
-        padding: 11vh 1vh !important;
+        padding: 0px !important;
     }
 
     .trade-img {
         width: 100%;
+    }
+
+    .detail-box {
+        flex-direction: column !important;
+    }
+
+    .contact-box {
+        flex-direction: column !important;
+        padding: 0vh 10px 50px 0vh !important;
+    }
+
+    .contact-address {
+        width: 100% !important;
+    }
+
+    .contact-map {
+        width: 100% !important;
+    }
+
+    .last-img {
+        margin-bottom: 40px;
+    }
+
+    .admission-list {
+        margin: 0px !important;
     }
 }
 
