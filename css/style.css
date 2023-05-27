@@ -861,5 +861,8 @@ section.app_section .img-box img {
   width: 60vh;
 }
 
+.next {
+  color: white !important;
+}
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
